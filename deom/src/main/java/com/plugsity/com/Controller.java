@@ -1,6 +1,6 @@
 package com.plugsity.com;
 
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/plugisty/avi/v1/")
 public class Controller {
 
-	@PostMapping("/saveBusinessUser")
+	@GetMapping("/saveBusinessUser")
 	public String saveBusinessUser() {
 		 
 		return "hello";
