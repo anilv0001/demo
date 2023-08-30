@@ -1,4 +1,4 @@
-FROM maven:3.8.3-jdk-8-slim
+FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 COPY target/*.jar deom.jar
 ENTRYPOINT ["java","-jar","/deom.jar"]
